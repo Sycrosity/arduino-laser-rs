@@ -3,6 +3,15 @@
 version = 3
 
 [[package]]
+name = "ag-lcd"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8571495f5b5dfa312872fd88556866a7e294c2f693d178ef2340957c9153d6f2"
+dependencies = [
+ "embedded-hal",
+]
+
+[[package]]
 name = "arduino-hal"
 version = "0.1.0"
 source = "git+https://github.com/rahix/avr-hal?rev=3b8f39fa2ec5e3359c7bedc33d982e75e8cc3700#3b8f39fa2ec5e3359c7bedc33d982e75e8cc3700"
@@ -14,6 +23,18 @@ dependencies = [
  "embedded-hal",
  "ufmt 0.1.2",
  "void",
+]
+
+[[package]]
+name = "arduino-laser-rs"
+version = "0.1.0"
+dependencies = [
+ "ag-lcd",
+ "arduino-hal",
+ "embedded-hal",
+ "nb 1.0.0",
+ "panic-halt",
+ "ufmt 0.2.0",
 ]
 
 [[package]]
@@ -84,17 +105,6 @@ name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
-
-[[package]]
-name = "design-lasercat"
-version = "0.1.0"
-dependencies = [
- "arduino-hal",
- "embedded-hal",
- "nb 1.0.0",
- "panic-halt",
- "ufmt 0.2.0",
-]
 
 [[package]]
 name = "embedded-hal"

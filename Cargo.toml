@@ -1,12 +1,12 @@
 [package]
-name = "design-lasercat"
+name = "arduino-laser-rs"
 version = "0.1.0"
 authors = ["Sycrosity <72102935+Sycrosity@users.noreply.github.com>"]
 edition = "2021"
 license = "MIT OR Apache-2.0"
 
 [[bin]]
-name = "design-lasercat"
+name = "arduino-laser-rs"
 test = false
 bench = false
 
@@ -15,6 +15,9 @@ panic-halt = "0.2.0"
 ufmt = "0.2.0"
 nb = "1.0.0"
 embedded-hal = "0.2.3"
+ag-lcd = "0.1.2"
+# robust-arduino-serial = "0.1.1"
+
 
 [dependencies.arduino-hal]
 git = "https://github.com/rahix/avr-hal"
