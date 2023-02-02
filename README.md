@@ -1,3 +1,8 @@
+ARCHIVED
+==================
+STARTED FROM SCRATCH IN <https://github.com/Sycrosity/arduino-nea-rs>
+
+
 `avr-hal-template`
 ==================
 [`cargo-generate`] template for jumpstarting projects on common AVR
